@@ -4,6 +4,7 @@
  * Return: environment
  *
  */
+
 char **getallenv()
 {
 	char **environ = *(getenviron());
@@ -104,12 +105,14 @@ char *_getenv(char *name)
 	}
 	return (name);
 }
+
 /**
  * _setenv - set environment for new value
  * @name: name of variable
  * @val: value of variable
  * Return: 0 or setallenv if success, -1 if fail
  */
+
 int _setenv(char *name, char *val)
 {
 	char ***environroot = getenviron();
@@ -156,6 +159,7 @@ int _setenv(char *name, char *val)
 	}
 	return (setallenv(*environroot, ptr));
 }
+
 /**
  * _unsetenv - unset environment
  * @name: name of variable to unset
@@ -163,6 +167,7 @@ int _setenv(char *name, char *val)
  *
  * testing functionality  copy environ, if hits skip over, realloc
  */
+
 int _unsetenv(char *name)
 {
 	char **environ = *getenviron();
