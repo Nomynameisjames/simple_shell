@@ -5,6 +5,7 @@
  * @fd: file descriptor
  * Return: num of characters
  */
+
 int _getline(char **lineptr, int fd)
 {
 	int size = 1025;
