@@ -1,9 +1,11 @@
 #include "shell.h"
+
 /**
  *_cd - change directory builtin
  * @av: argument to work with
  * Return: int
  */
+
 int _cd(char *av[])
 {
 	char *oldpwd = NULL, *newpath, *pathbit, *newptr;
