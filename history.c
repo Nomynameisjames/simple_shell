@@ -1,7 +1,7 @@
 #include "shell.h"
 #include "history.h"
 
-/**
+/*
  * gethistory - gets the history list
  * Return: 0 uposon success
  */
