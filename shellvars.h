@@ -7,6 +7,7 @@
  * @val: value of variable
  * @next: next variable in the list
  */
+
 typedef struct ShellVar
 {
 	char *name;
