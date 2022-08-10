@@ -11,11 +11,13 @@ ShellVar **getspecial()
 
 	return (&special);
 }
+
 /**
  * getsvars - get static vars wrapper
  *
  * Return: address of var
  */
+
 ShellVar **getvars()
 {
 	static ShellVar *vars;
