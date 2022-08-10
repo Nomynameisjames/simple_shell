@@ -5,6 +5,7 @@
  * @av: arguments
  * Return: 1
  */
+
 int checkpath(char *av[])
 {
 	char *path, *pathptr, *pathvar, *ptr, *pathenv = "PATH", *linect;
