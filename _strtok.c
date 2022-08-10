@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * strtok - tokenizes a string
  * @str: string to tokenize
@@ -7,6 +8,7 @@
  *
  * Return: token
  */
+
 char *strtok(char *str, char *delim)
 {
 	static char *saved_string;
@@ -74,6 +76,7 @@ char *strtok(char *str, char *delim)
 	}
 	return (tmp_str);
 }
+
 /**
  * strtokqe - string token with quotes and escapes
  * @str: string
@@ -86,6 +89,7 @@ char *strtok(char *str, char *delim)
  *
  * Return: string
  */
+
 char *strtokqe(char *str, char *delim, int escflags)
 {
 	static char *saved_string;
