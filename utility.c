@@ -1,5 +1,6 @@
 #include "shell.h"
 #include <stdarg.h>
+
 /**
  * linecount - count lines
  *
@@ -7,6 +8,7 @@
  *
  * Return: count
  */
+
 int linecount(int increment)
 {
 	static int count;
@@ -15,6 +17,7 @@ int linecount(int increment)
 
 	return (count);
 }
+
 /**
  * itos - converts integer to string
  *
@@ -22,6 +25,7 @@ int linecount(int increment)
  *
  * Return: a string
  */
+
 char *itos(int digits)
 {
 	int count, i, neg, absMod, digitTest;
