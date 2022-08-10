@@ -1,11 +1,13 @@
 #include "shell.h"
 #include "shellvars.h"
+
 /**
  * initsvars - initialize vars
  * @ac: arguemnts intiger
  * @av: string arguments
  * Return: int
  */
+
 int initsvars(int ac, char **av)
 {
 	ShellVar **specialroot = getspecial();
@@ -56,12 +58,14 @@ int initsvars(int ac, char **av)
 	ptr->next = NULL;
 	return (0);
 }
+
 /**
  * getsvar - gets shell variable
  * @name: name of shell var
  *
  * Return: original argument if not found
  */
+
 char *getsvar(char *name)
 {
 	ShellVar *special = *(getspecial()), *vars = *(getvars());
