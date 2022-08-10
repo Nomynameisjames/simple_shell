@@ -101,5 +101,4 @@ int _atoi(char *s);
 
 char *_getpid(void);
 
-
 #endif
