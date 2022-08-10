@@ -1,10 +1,12 @@
 #include "shell.h"
 #include "alias.h"
+
 /**
  * getalist - static wrapper getalias list
  * Return: address alist
  *
  */
+
 AliasData **getalist()
 {
 	static AliasData *alist;
@@ -17,6 +19,7 @@ AliasData **getalist()
  * @name: name of alias
  * Return: original argument if not found, otherwise value
  */
+
 char *getalias(char *name)
 {
 	AliasData *alist = *(getalist());
@@ -43,12 +46,14 @@ char *getalias(char *name)
 	free(name);
 	return (getalias(_strdup(ptr->val)));
 }
+
 /**
  * setalias - set alias and value
  * @name: name of alias
  * @val: value to set alias to
  * Return: 0 upon success
  */
+
 int setalias(char *name, char *val)
 {
 	AliasData **alistroot = getalist();
@@ -86,11 +91,13 @@ int setalias(char *name, char *val)
 	}
 	return (0);
 }
+
 /**
  * unsetalias - unset alias of @name
  * @name: name of alias value to unset
  * Return: 0 if sucess
  */
+
 int unsetalias(char *name)
 {
 	AliasData *alist = *(getalist());
