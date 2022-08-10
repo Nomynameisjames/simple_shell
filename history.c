@@ -5,7 +5,6 @@
  * gethistory - gets the history list
  * Return: 0 uposon success
  */
-
 HistList **gethistory()
 {
 	static HistList *hlist;
