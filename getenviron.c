@@ -1,4 +1,3 @@
-
 /**
  * getenviron - static wrapper copy whole environ
  *
