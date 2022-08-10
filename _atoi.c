@@ -20,6 +20,7 @@ int _atoi(char *s)
 	sum = 0;
 	i = 0;
 
+
 	/* run a while loop */
 	while (s[i] != '\0')
 	{
