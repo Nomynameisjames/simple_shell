@@ -1,9 +1,11 @@
 #include "shell.h"
-/**
+
+/*
  * parsesetsvar - parse set shell vars, returns new buf after var setting
  * @buf: buffer
  * Return: string
  */
+
 char *parsesetsvar(char *buf)
 {
 	int haseq;
@@ -65,6 +67,7 @@ char *parsesetsvar(char *buf)
  * @buf: buffer string that was input
  * Return: processed buffer string
  */
+
 char *subsvars(char **buf)
 {
 	char *varptr = *buf, *ptr, *name, *val, *valptr, *dest, *dolptr;
@@ -178,13 +181,14 @@ char *subsvars(char **buf)
 	return (*buf);
 }
 
-/**
+/*
  * cleanarg - cleans escapes and functional quotes
  *
  * @arg: - argument to clean
  *
  * Return: cleaned argument
  */
+
 char *cleanarg(char *arg)
 {
 	char *newbuf, *ptr, *ptr2;
